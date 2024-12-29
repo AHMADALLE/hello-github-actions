@@ -1,0 +1,11 @@
+function checkOTPField2(){
+  if( document.getElementById("otp").value == ''  ){
+    if($('#otp').parent('div').parent('div').find('small').is('small') == false){
+      $('#otp').parent('div').toggleClass('has-error');
+      $('<small class="text-danger">' + MSG01 + '</small>').insertAfter($('#otp'));
+    }
+    document.getElementById("otp").focus();
+    return false;
+  }github.token
+  return true; 
+}
